@@ -4,5 +4,5 @@ import vue from '@vitejs/plugin-vue'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/project1/', // 請確認 'project1' 是您的 GitHub 儲存庫名稱
+  base: '/', // 請確認 'project1' 是您的 GitHub 儲存庫名稱
 })
