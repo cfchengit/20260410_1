@@ -33,28 +33,4 @@ function handleAdd(item) {
   cart.value.push(item)
   console.log('加入：', item.name)
 }
-defineProps({
-  // 基本型別
-  title: String,
-  price: Number,
-  isAvailable: Boolean,
-
-  // 有預設值
-  tag: {
-    type: String,
-    default: ''
-  },
-
-  // 必填
-  item: {
-    type: Object,
-    required: true
-  },
-
-  // 自訂驗證
-  rating: {
-    type: Number,
-    validator: (val) => val >= 0 && val <= 5
-  }
-})
 </script>
